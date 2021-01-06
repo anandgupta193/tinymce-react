@@ -134,7 +134,7 @@ export class Editor extends React.Component<IAllProps> {
       return this.props.tinymceScriptSrc;
     } else {
       const channel = this.props.cloudChannel;
-      const apiKey = this.props.apiKey ? this.props.apiKey : 'nokey';
+      const apiKey = this.props.apiKey ? this.props.apiKey : 'no-api-key123';
       return `https://cdn.tiny.cloud/1/${apiKey}/tinymce/${channel}/tinymce.min.js`;
     }
   }
