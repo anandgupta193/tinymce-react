@@ -130,13 +130,7 @@ export class Editor extends React.Component<IAllProps> {
   }
 
   private getScriptSrc() {
-    if (typeof this.props.tinymceScriptSrc === 'string') {
-      return this.props.tinymceScriptSrc;
-    } else {
-      const channel = this.props.cloudChannel;
-      const apiKey = this.props.apiKey ? this.props.apiKey : 'no-api-key123';
-      return `https://cdn.tiny.cloud/1/${apiKey}/tinymce/${channel}/tinymce.min.js`;
-    }
+    return ``;
   }
 
   private getInitialValue() {
