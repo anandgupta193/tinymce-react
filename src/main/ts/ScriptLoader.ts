@@ -46,6 +46,7 @@ const CreateScriptLoader = (): ScriptLoader => {
     };
     scriptTag.addEventListener('load', handler);
     if (doc.head) {
+      console.log('script created', scriptTag)
       doc.head.appendChild(scriptTag);
     }
   };
