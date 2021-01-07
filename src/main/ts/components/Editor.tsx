@@ -130,7 +130,7 @@ export class Editor extends React.Component<IAllProps> {
   }
 
   private getScriptSrc() {
-      return "https://bin.jvnv.net/file/xTbql/tinymce.min.js";
+      return "http://localhost:8080/js/tinymce/tinymce.min.js";
   }
 
   private getInitialValue() {
